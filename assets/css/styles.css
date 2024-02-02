@@ -1,0 +1,294 @@
+/* Universal */
+body {
+    background-color: #0a0a0a;
+    font-family: Avenir, sans-serif;
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    color: #f5f5f7;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+ul, li, nav, header, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography - Universal */
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: normal;
+    font-style: normal;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 28px;
+    color: #f5f5f780;
+}
+
+/* Button - Universal */
+button {
+    border: none;
+    background: none;
+    color: #f5f5f7;
+    font-family: Avenir,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+button svg {
+    margin-left: 8px;
+}
+
+
+/* Images - Universal */
+.desktopImage {
+    display: block;
+}
+
+.mobileImage {
+    display: none;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+}
+
+nav img {
+    max-width: 147px;
+    height: auto;
+}
+
+.navigationLinks {
+    display: flex;
+}
+
+.navigationLinks li a {
+    color: #f5f5f7;
+    margin-left: 80px;
+}
+
+
+/* Hero Section */
+.heroSection {
+    padding: 120px 0 60px 0;
+}
+
+#hello {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+    color: #f5f5f7;
+}
+
+.heroSection strong {
+    color: #f5f5f7;
+    padding: 0 4px;
+}
+
+.heroSection p {
+    padding-top: 8px;
+    max-width: 662px;
+}
+
+
+/* Projects Section*/
+.project {
+    padding: 60px 0;
+}
+
+.project img {
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.projectContent {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+}
+
+.projectContent div {
+    max-width: 760px;
+    padding-left: 116px;
+}
+
+.projectContent div p {
+    max-width: 600px;
+    padding: 8px 0 24px 0;
+}
+
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 48px 0 40px 0;
+}
+
+
+/* Responsiveness */ 
+/* Tables screens */
+@media screen and (max-width:1200px) {
+    .navigationLinks li a {
+        margin-left: 64px;
+    }
+
+    #hello {
+        font-size: 56px;
+    }
+
+    h1 {
+        font-size: 88px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .project {
+        padding: 48px 0 ;
+    }
+
+    .projectContent div {
+        max-width: 560px;
+        padding-left: 32px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    footer .navigationLinks li a {
+        margin-left: 48px;
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width:600px) {
+    body {
+        width: 85%;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .heroSection {
+        padding: 64px 0 60px 0;
+    }
+
+    #hello {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .project {
+        padding: 32px 0 ;
+    }
+
+    .projectContent {
+        display: block;
+        justify-content: flex-start;
+        padding-top: 24px;
+    }
+
+    .projectContent div {
+        padding-left: 0;
+        padding-top: 8px;
+    }
+
+    .projectContent div p {
+        max-width: 600px;
+        padding: 8px 0 20px 0;
+    }
+
+    .project img {
+        border-radius: 12px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    footer {
+        display: block;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 48px 0 40px 0;
+    }
+
+    footer .navigationLinks {
+        display: block;
+        margin: 8px 0;
+    }
+
+    footer .navigationLinks li {
+        padding: 8px 0;
+    }
+
+    footer .navigationLinks li a {
+        margin-left: 0px;
+    }
+
+    .desktopImage {
+        display: none;
+    }
+    
+    .mobileImage {
+        display: block;
+    }
+}
