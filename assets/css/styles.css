@@ -9,7 +9,7 @@
 body {
     background-color: #0a0a0a;
     font-family: "Avenir", "Outfit", "Urbanist", sans-serif;
-    max-width: 1200px;
+    max-width: 944px;
     width: 80%;
     margin: auto;
     color: #f5f5f7;
@@ -69,6 +69,68 @@ p {
     line-height: normal;
 }
 
+.breadCrumb a {
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 28px;
+    color: #f5f5f780;
+    transition: 0.3s ease; 
+}
+
+.breadCrumb a:hover {
+    color: #f5f5f7;
+    font-weight: 500;
+    transition: 0.3 ease;
+}
+
+/* Typography - Case study */
+.caseStudy h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.caseStudy h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 0 16px 0;
+    margin: 0;
+}
+
+.caseStudy h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 0 12px 0;
+    margin: 0;
+
+}
+
+.caseStudy h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.caseStudy p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    max-width: 760px;
+}
+
 /* Button - Universal */
 button {
     border: none;
@@ -126,6 +188,10 @@ nav img {
 /* Hero Section */
 .heroSection {
     padding: 120px 0 60px 0;
+}
+
+.caseStudy {
+    padding: 48px 0 48px 0;
 }
 
 #hello {
@@ -305,6 +371,198 @@ footer {
     border-radius: 12px;
 }
 
+.overviewCard {
+    border-radius: 8px;
+    border: 1px solid rgba(245, 245, 247, 0.20); 
+    padding: 16px;   
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding-top: 80px;
+}
+
+.note {
+    position: absolute;
+}
+
+.note div {
+    color: #F5F5F780;
+    font-family: Caveat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imageCarousal {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageCarousal div {
+    display: flex;
+    gap: 64px;
+    animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.imageCarousal img {
+    width: auto;
+    height: 320px;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding-top: 40px;
+}
+
+.statCard {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #F5F5F710;
+}
+
+.statCard div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.statNumber {
+    color: #F5F5F7;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.statTitle {
+    color: #F5F5F7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bulletPoints {
+    padding: 0;
+    margin: 0;
+    max-width: 760px;
+}
+
+.bulletPoints li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    color: #F5F5F780;
+}
+
+.imgContainerTokenStructure{
+    background: #F5F5F7;
+    border-radius: 24px;
+    height: 244px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.imgTokenStructure {
+    max-height: 154px;
+    width: auto;
+}
+
+.imgContainerTokenMod {
+    background: #F5F5F7;
+    border-radius: 24px;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.imgTokenMod {
+    max-height: 560px;
+    width: auto;
+}
+
+.imgContainerStorybooks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.imgContainerStorybooks img {
+    max-height: 420px;
+    width: auto;
+    border-radius: 12px;
+
+}
+
+.thanks {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherCaseStudyCard {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.otherCaseStudyImg {
+    max-height: 240px;
+    max-width: 300px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.otherCaseStudyImg a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherCaseStudyImg img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.otherCaseStudyImg img:hover {
+    transition: 0.3s ease;
+    width: 105%;
+}
+
 
 /* Responsiveness */ 
 /* Tablet screens */
@@ -360,6 +618,32 @@ footer {
         padding-top: 32px;
         padding-bottom: 32px;
     }
+
+    /* Case study page - tablet */
+
+    .statNumber {
+    font-size: 32px;
+    }
+
+    .imgTokenStructure {
+    max-height: 120px;
+    width: auto;
+    }
+
+    .imgTokenMod {
+    width: 100%;
+    height: auto;
+    }
+
+    .imgContainerStorybooks img {
+    max-height: auto;
+    width: 100%;
+    } 
+    
+    .otherCaseStudyContent p{
+        display: none;
+    }
+
 
 }
 
@@ -468,4 +752,54 @@ footer {
         padding-top: 32px;
         padding-bottom: 32px;
     }
+
+    /* Case study page - mobile */
+
+    .overviewGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .statsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imgTokenStructure {
+        height: auto;
+        width: 80%;
+    }
+
+    .imgContainerTokenStructure{
+        border-radius: 16px;
+        height: 200px;
+    }
+
+    .statNumber {
+        font-size: 28px;
+    }
+
+    .thanks h2{
+        font-size: 24px;
+    }
+
+    .otherCaseStudyCard {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .otherCaseStudyContent {
+        padding-left: 8px;
+    }
+
+    .otherCaseStudyImg {
+        border-radius: 16px;
+    }
+
+    .note {
+        display: none;
+    }
+
 }
