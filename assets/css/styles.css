@@ -188,12 +188,15 @@ nav img {
 /* Hero Section */
 .heroSection {
     padding: 120px 0 60px 0;
+
+}
+
+.heroHomePage {
     display: flex;
     gap: 48px;
     align-self: stretch;
     align-items: center;
     align-content: center;
-
 }
 
 .myPortrait {
@@ -536,6 +539,21 @@ footer {
     border-radius: 12px;
 
 }
+
+.imgContainerSteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.imgContainerSteps img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 .thanks {
     padding: 32px 0;
