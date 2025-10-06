@@ -697,6 +697,11 @@ footer {
         display: block;
     }
 
+    .heroHomePage {
+        padding: 64px 0 60px 0;
+        display: block;
+    }
+
     .myPortrait {
         margin-top: 24px;
 
